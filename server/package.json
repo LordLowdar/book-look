@@ -1,11 +1,17 @@
 {
   "name": "server",
+  "homepage": "https://lordlowdar.github.io/book-look/",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "watch": "nodemon server.js"
+    "deploy": "gh-pages -d build",
+    "predeploy": "npm run build",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "watch": "nodemon server.js",
+    "eject": "react-scripts eject"
   },
   "keywords": [],
   "author": "",
